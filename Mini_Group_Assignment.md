@@ -17,9 +17,10 @@ We have considered other alternative approaches to the project, but feel strongl
 We have also thought of some possible deliverables:
 
 For each station:  
--Total immigrant population in a 5-mile radius in 2010  
--Total immigrant population in a 5-mile radius 2019  
--Percentage change in a 5-mile radius  
+-Total immigrant population in a half-mile radius in 2010  
+-Total immigrant population in a half-mile radius 2019  
+-Percentage change in a half-mile radius  
+
 For the City of Los Angeles:  
 -Percentage change of immigrant population between 2010 and 2019  
 
