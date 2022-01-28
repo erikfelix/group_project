@@ -20,14 +20,14 @@ For each station:
 -Total immigrant population in a 5-mile radius in 2010  
 -Total immigrant population in a 5-mile radius 2019  
 -Percentage change in a 5-mile radius  
-For the City of Los Angeles  
+For the City of Los Angeles:  
 -Percentage change of immigrant population between 2010 and 2019  
 
 For the the station with the highest change in immigrant population:  
--A side-by-side map that uses  the Year of Entry variable  to show the number of  immigrant populations that entered between 2000-2010 (using 2010 ACS), and the number of  immigrant populations that entered between 2010-2019 (using 2019 ACS)  
+-A side-by-side map that uses the Year of Entry variable to show the number of  immigrant populations that entered between 2000-2010 (using 2010 ACS), and the number of  immigrant populations that entered between 2010-2019 (using 2019 ACS)  
 
 For the one station with slowest growth in immigrant population:   
--Two phased map that covers the Year of Entry data for immigrant populations that entered between 2000-2010 (using 2010 ACS), and the Year of Entry data for immigrant populations that entered between 2010-2019 (using 2019 ACS). 
+-A side-by-side map that uses the Year of Entry variable to show the number of immigrant populations that entered between 2000-2010 (using 2010 ACS), and the number of immigrant populations that entered between 2010-2019 (using 2019 ACS). 
 
 ## Data Update
 
