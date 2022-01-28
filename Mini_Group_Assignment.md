@@ -1,3 +1,7 @@
+# Next Stop: Rail-induced Displacement of Immigrant Communities?
+
+[Link to proposal](https://github.com/erikfelix/group_project/blob/main/ProjectProposal.md)
+
 ## Roles
 
 Our roles will be divided by tasks. Erik is our Geospatial Data Manager and he will be responsible for map design, code troubleshooting, and most importantly, crisis management. 
