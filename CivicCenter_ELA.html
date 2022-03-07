@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eac3f6297f06493b8e4b52ffde2c486d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eac3f6297f06493b8e4b52ffde2c486d" ></div>
+        
+</body>
+<script>    
+    
+            var map_eac3f6297f06493b8e4b52ffde2c486d = L.map(
+                "map_eac3f6297f06493b8e4b52ffde2c486d",
+                {
+                    center: [34.0332, -118.1614],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a6daca7e3b2b439cad059afb65a3d1b0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eac3f6297f06493b8e4b52ffde2c486d);
+        
+    
+            var marker_ae32022c9fb5422392e6291556902f01 = L.marker(
+                [34.0332, -118.1614],
+                {}
+            ).addTo(map_eac3f6297f06493b8e4b52ffde2c486d);
+        
+    
+            var icon_8d7fa2a8a6ea4629a45a12341b41a69c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae32022c9fb5422392e6291556902f01.setIcon(icon_8d7fa2a8a6ea4629a45a12341b41a69c);
+        
+    
+        var popup_d8c92f7d84d148c1a304d4abfa304c06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e743ce8094bc4f418e53e53674ef04a3 = $(`<div id="html_e743ce8094bc4f418e53e53674ef04a3" style="width: 100.0%; height: 100.0%;">East LA Civic Center</div>`)[0];
+            popup_d8c92f7d84d148c1a304d4abfa304c06.setContent(html_e743ce8094bc4f418e53e53674ef04a3);
+        
+
+        marker_ae32022c9fb5422392e6291556902f01.bindPopup(popup_d8c92f7d84d148c1a304d4abfa304c06)
+        ;
+
+        
+    
+    
+            marker_ae32022c9fb5422392e6291556902f01.bindTooltip(
+                `<div>
+                     East LA Civic Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

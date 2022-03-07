@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_510d8c6fa5d54fa48254e92beb830e75 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_510d8c6fa5d54fa48254e92beb830e75" ></div>
+        
+</body>
+<script>    
+    
+            var map_510d8c6fa5d54fa48254e92beb830e75 = L.map(
+                "map_510d8c6fa5d54fa48254e92beb830e75",
+                {
+                    center: [34.0639, -118.2359],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c5594507d7a4708adf7e0e494cb272c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_510d8c6fa5d54fa48254e92beb830e75);
+        
+    
+            var marker_8e2695be76f44e6fb608fb3faa686eed = L.marker(
+                [34.0639, -118.2359],
+                {}
+            ).addTo(map_510d8c6fa5d54fa48254e92beb830e75);
+        
+    
+            var icon_3ea716dde06a4ac29b6ecb301fcf07d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8e2695be76f44e6fb608fb3faa686eed.setIcon(icon_3ea716dde06a4ac29b6ecb301fcf07d1);
+        
+    
+        var popup_52a7f4e4ad5b465d8974d56b74679543 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa57c4059e6648b691fbcae9435cd336 = $(`<div id="html_fa57c4059e6648b691fbcae9435cd336" style="width: 100.0%; height: 100.0%;">Region: Central LA</div>`)[0];
+            popup_52a7f4e4ad5b465d8974d56b74679543.setContent(html_fa57c4059e6648b691fbcae9435cd336);
+        
+
+        marker_8e2695be76f44e6fb608fb3faa686eed.bindPopup(popup_52a7f4e4ad5b465d8974d56b74679543)
+        ;
+
+        
+    
+    
+            marker_8e2695be76f44e6fb608fb3faa686eed.bindTooltip(
+                `<div>
+                     Chinatown Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
