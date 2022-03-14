@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9fe289047ddc4755b30a086ff7217d03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9fe289047ddc4755b30a086ff7217d03" ></div>
+        
+</body>
+<script>    
+    
+            var map_9fe289047ddc4755b30a086ff7217d03 = L.map(
+                "map_9fe289047ddc4755b30a086ff7217d03",
+                {
+                    center: [34.112976, -118.108419],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f830d883e4941d4a703f71942af5a30 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var marker_38b306020cc04961b00e3817bd2f8463 = L.marker(
+                [34.0332, -118.1614],
+                {}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var icon_614dd2ab5d4c436c8e28880bfdc8e293 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_38b306020cc04961b00e3817bd2f8463.setIcon(icon_614dd2ab5d4c436c8e28880bfdc8e293);
+        
+    
+        var popup_4e006e5264034be4a2e270490d5a094b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d59d282438a544ba8ed8ccdab109e206 = $(`<div id="html_d59d282438a544ba8ed8ccdab109e206" style="width: 100.0%; height: 100.0%;">Region: East LA</div>`)[0];
+            popup_4e006e5264034be4a2e270490d5a094b.setContent(html_d59d282438a544ba8ed8ccdab109e206);
+        
+
+        marker_38b306020cc04961b00e3817bd2f8463.bindPopup(popup_4e006e5264034be4a2e270490d5a094b)
+        ;
+
+        
+    
+    
+            marker_38b306020cc04961b00e3817bd2f8463.bindTooltip(
+                `<div>
+                     East LA Civic Center Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7835ea1f27ee4b9782505dffc8bee29e = L.marker(
+                [34.0475, -118.2192],
+                {}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var icon_de2597eb81774ba090a7dfeacd3f9800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7835ea1f27ee4b9782505dffc8bee29e.setIcon(icon_de2597eb81774ba090a7dfeacd3f9800);
+        
+    
+        var popup_08cbe7bc13284dfe9cbcd31d212606c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f441d1e52cd3447589e5008767ac414e = $(`<div id="html_f441d1e52cd3447589e5008767ac414e" style="width: 100.0%; height: 100.0%;">Region: Central East LA</div>`)[0];
+            popup_08cbe7bc13284dfe9cbcd31d212606c4.setContent(html_f441d1e52cd3447589e5008767ac414e);
+        
+
+        marker_7835ea1f27ee4b9782505dffc8bee29e.bindPopup(popup_08cbe7bc13284dfe9cbcd31d212606c4)
+        ;
+
+        
+    
+    
+            marker_7835ea1f27ee4b9782505dffc8bee29e.bindTooltip(
+                `<div>
+                     Mariachi Plaza Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0289231c3ee410b81483505080efb76 = L.marker(
+                [34.0639, -118.2359],
+                {}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var icon_46101fbb6c274783817871691e77b2ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a0289231c3ee410b81483505080efb76.setIcon(icon_46101fbb6c274783817871691e77b2ea);
+        
+    
+        var popup_df400bd47ae545069559fef3c194ac2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60a0473e58084b41b858e949d40d2090 = $(`<div id="html_60a0473e58084b41b858e949d40d2090" style="width: 100.0%; height: 100.0%;">Region: Central LA</div>`)[0];
+            popup_df400bd47ae545069559fef3c194ac2c.setContent(html_60a0473e58084b41b858e949d40d2090);
+        
+
+        marker_a0289231c3ee410b81483505080efb76.bindPopup(popup_df400bd47ae545069559fef3c194ac2c)
+        ;
+
+        
+    
+    
+            marker_a0289231c3ee410b81483505080efb76.bindTooltip(
+                `<div>
+                     Chinatown Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d79b6c8c1e84eb486773a5909f79088 = L.marker(
+                [34.0871, -118.2126],
+                {}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var icon_6c81159acea74eada1a0eaa5ddd0c5cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d79b6c8c1e84eb486773a5909f79088.setIcon(icon_6c81159acea74eada1a0eaa5ddd0c5cb);
+        
+    
+        var popup_6e51f34a87224ea3a9395f7d8a7e7c7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53b6981baadb44a5a7f75733b5471be7 = $(`<div id="html_53b6981baadb44a5a7f75733b5471be7" style="width: 100.0%; height: 100.0%;">Region: NELA</div>`)[0];
+            popup_6e51f34a87224ea3a9395f7d8a7e7c7d.setContent(html_53b6981baadb44a5a7f75733b5471be7);
+        
+
+        marker_0d79b6c8c1e84eb486773a5909f79088.bindPopup(popup_6e51f34a87224ea3a9395f7d8a7e7c7d)
+        ;
+
+        
+    
+    
+            marker_0d79b6c8c1e84eb486773a5909f79088.bindTooltip(
+                `<div>
+                     Heritage Square Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_faeafe9fd9aa4698bd31928b99d4ea4e = L.marker(
+                [34.1112, -118.1926],
+                {}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var icon_01fe189af6c944188f7698d9260cbf7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_faeafe9fd9aa4698bd31928b99d4ea4e.setIcon(icon_01fe189af6c944188f7698d9260cbf7d);
+        
+    
+        var popup_f29dbd74796045b48a95a3f45ed3cdeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25c0d424187b4d44b8806d17463ef51e = $(`<div id="html_25c0d424187b4d44b8806d17463ef51e" style="width: 100.0%; height: 100.0%;">Region: NELA</div>`)[0];
+            popup_f29dbd74796045b48a95a3f45ed3cdeb.setContent(html_25c0d424187b4d44b8806d17463ef51e);
+        
+
+        marker_faeafe9fd9aa4698bd31928b99d4ea4e.bindPopup(popup_f29dbd74796045b48a95a3f45ed3cdeb)
+        ;
+
+        
+    
+    
+            marker_faeafe9fd9aa4698bd31928b99d4ea4e.bindTooltip(
+                `<div>
+                     Highland Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ae9d0a558a643c9a6dfc204fdea9fd5 = L.marker(
+                [34.1426, -118.1488],
+                {}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var icon_8ba84aa60ade43b08817b1100eff2440 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1ae9d0a558a643c9a6dfc204fdea9fd5.setIcon(icon_8ba84aa60ade43b08817b1100eff2440);
+        
+    
+        var popup_2098cd0923e444dc971ba6584ec4590f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66ad69f313394ad3b61f5257290cdff8 = $(`<div id="html_66ad69f313394ad3b61f5257290cdff8" style="width: 100.0%; height: 100.0%;">Region: Pasadena</div>`)[0];
+            popup_2098cd0923e444dc971ba6584ec4590f.setContent(html_66ad69f313394ad3b61f5257290cdff8);
+        
+
+        marker_1ae9d0a558a643c9a6dfc204fdea9fd5.bindPopup(popup_2098cd0923e444dc971ba6584ec4590f)
+        ;
+
+        
+    
+    
+            marker_1ae9d0a558a643c9a6dfc204fdea9fd5.bindTooltip(
+                `<div>
+                     Del Mar Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dbae571dd4e4f3fa69bb95e58f9a0d8 = L.marker(
+                [34.1425, -118.0288],
+                {}
+            ).addTo(map_9fe289047ddc4755b30a086ff7217d03);
+        
+    
+            var icon_3ac80696589847bd976f0e94d329ee9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1dbae571dd4e4f3fa69bb95e58f9a0d8.setIcon(icon_3ac80696589847bd976f0e94d329ee9b);
+        
+    
+        var popup_4cefbdde168f4a36869ae23cb23a7a20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_449258ea8b034c399e21f4ddf935d9e8 = $(`<div id="html_449258ea8b034c399e21f4ddf935d9e8" style="width: 100.0%; height: 100.0%;">Region: San Gabriel Valley</div>`)[0];
+            popup_4cefbdde168f4a36869ae23cb23a7a20.setContent(html_449258ea8b034c399e21f4ddf935d9e8);
+        
+
+        marker_1dbae571dd4e4f3fa69bb95e58f9a0d8.bindPopup(popup_4cefbdde168f4a36869ae23cb23a7a20)
+        ;
+
+        
+    
+    
+            marker_1dbae571dd4e4f3fa69bb95e58f9a0d8.bindTooltip(
+                `<div>
+                     Arcadia Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
